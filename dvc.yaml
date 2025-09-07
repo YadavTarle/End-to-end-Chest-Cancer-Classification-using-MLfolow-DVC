@@ -38,7 +38,7 @@ stages:
       - artifacts/training/model.h5
   
   evaluation:
-    cmd: python src/cnnClassifier/pipeline/stage_04_evaluation.py
+    cmd: python src/cnnClassifier/pipeline/stage_04_model_evaluation.py
     deps:
       - src/cnnClassifier/pipeline/stage_04_evaluation.py
       - config/config.yaml
